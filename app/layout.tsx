@@ -35,7 +35,6 @@ export default async function RootLayout({
   params: { lng },
 }: Params) {
   const { isEnabled } = draftMode();
-  const menuData = await GetMenuItems(lng, isEnabled);
   const languages = await getAvailableLocales();
 
   return (
